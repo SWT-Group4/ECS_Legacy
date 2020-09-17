@@ -3,14 +3,15 @@
     public class ECS
     {
         private int _threshold;
-        private readonly TempSensor _tempSensor;
-        private readonly Heater _heater;
+        private readonly ITempSensor _tempSensor;   //Uses Interface instead of class directly
+        private readonly IHeater _heater;           //Uses Interface instead of class directly
 
-        public ECS(int thr)
+        //Constructor which uses constructor injection
+        public ECS(int thr, ITempSensor Temp, IHeater Heat)
         {
             SetThreshold(thr);
-            _tempSensor = new TempSensor();
-            _heater = new Heater();
+            _tempSensor = Temp;
+            _heater = Heat;
         }
 
         public void Regulate()
