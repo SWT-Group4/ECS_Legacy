@@ -8,7 +8,8 @@ At this point, all team members have a clone of the legacy code.
 
 #### Exercise 2: Reverse engineering the legacy ECS solution
 Reverse-engineer the ECS legacy code: Create a UML class diagram of the existing solution and use
-this to identify the flaws in the design when it comes to testability.
+this to identify the flaws in the design when it comes to testability.  
+Answer to question: https://app.lucidchart.com/documents/view/5f99884f-db0c-497c-be6b-04e6e8ca36dc
 
 #### Exercise 3: Implement the refactored design
 
