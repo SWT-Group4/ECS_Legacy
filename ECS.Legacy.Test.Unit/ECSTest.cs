@@ -1,10 +1,9 @@
-using System.Security.Cryptography.X509Certificates;
 using NUnit.Framework;
 
 namespace ECS.Legacy.Test.Unit
 {
     [TestFixture]
-    public class EcsLegacyUnitTests
+    public class ECSTest
     {
         /**
          *  @brief Unit tests for the ECS class (legacy code)
