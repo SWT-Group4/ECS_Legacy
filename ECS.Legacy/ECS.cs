@@ -7,11 +7,11 @@
         private readonly IHeater _heater;           //Uses Interface instead of class directly
 
         //Constructor which uses constructor injection
-        public ECS(int thr, ITempSensor Temp, IHeater Heat)
+        public ECS(int thr, ITempSensor tempSensor, IHeater heater)
         {
             SetThreshold(thr);
-            _tempSensor = Temp;
-            _heater = Heat;
+            _tempSensor = tempSensor;
+            _heater = heater;
         }
 
         public void Regulate()
